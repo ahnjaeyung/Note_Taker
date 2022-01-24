@@ -22,6 +22,7 @@ This application was created using technologies such as:
 
 Some of the methods used in creating this application were found from resources such as W3Schools, MDN Web Docs, and Stack Overflow.  
 [Link to Demo Video](https://drive.google.com/file/d/1-k21CKyXhqE3cpyq4jAPiAByfxqeiY3M/view)  
+[Link to Deployed Application](https://notetaker-jae.herokuapp.com/)  
 ## Table of Contents  
   - [Badges](#badges)  
   - [Description](#description)  
