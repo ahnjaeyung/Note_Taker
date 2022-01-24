@@ -33,7 +33,7 @@ Some of the methods used in creating this application were found from resources 
   - [Tests](#tests)  
   - [Questions](#questions)  
 ## Installation  
-Clone repo, npm i, and node server.js.  
+Clone repo and npm i.  
 ## Usage  
 This application can be launched via the deployed live link on Heroku.  Once launched, the user is presented with a landing page with a link to a notes page.  When the user clicks this link, they are presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note's text in the right-hand column.  
 
