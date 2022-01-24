@@ -32,7 +32,30 @@ router.post('/notes', (req, res) => {
             res.json(req.body);
         });
     });
-    
+
 }); // end of router.post
+
+router.delete('/notes/:id', (req, res) => {
+    const noteToDelete = req.params.id;
+
+    fs.readFile('db/db.json', 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        req.body.id = uuidv4();
+        var notes = JSON.parse(data);
+        var newNotes = notes.filter(note => note.id !== noteToDelete)
+
+        fs.writeFile('db/db.json', JSON.stringify(newNotes), (err) => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            res.json(req.body);
+        });
+    });
+
+}); // end of router.delete
 
 module.exports = router;
